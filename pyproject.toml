@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pddikti-cli"
+version = "0.1.0"
+description = "Query PDDIKTI, the Indonesian higher-education registry, from the terminal"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.scripts]
+pddikti = "pddikti.cli:main"
+
+[tool.setuptools]
+packages = ["pddikti"]
